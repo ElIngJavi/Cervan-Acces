@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Enlazar la fuente de Google Fonts para el estilo del texto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap">
+  <title>CERVAN ACCESS</title>
+  <!-- Enlazar el archivo de estilos CSS -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <!-- Enlazar el archivo de scripts JS -->
+  <script src="script.js"></script>
+</head>
+
+<body>
+
+  <!-- Encabezado -->
+  <header>
+    <!-- Logo de la empresa -->
+    <img src="img/logito.png" alt="Logo de CERVAN ACCESS">
+    <h1>CERVAN ACCES</h1>
+    <p style="text-align: center;">Puertas automáticas, Rodamiento, Andén y Control de acceso</p>
+  </header>
+  <!-- Barra de navegación para versión escritorio -->
+<nav class="desktop-nav">
+  <a href="#acerca">Acerca de</a>
+  <a href="#Paquetes">Paquetes</a>
+  <a href="#servicios">Servicios</a>
+  <a href="#contacto">Contacto</a>
+  <a href="index2.html" onclick="cerrarVentana()">Collage</a>
+</nav>
+
+<div id="cart">
+  <button class="cart-button" id="cartButton">🛒</button>
+  <div id="cartPanel" class="cart-panel">
+    <h3>Carrito de Compras</h3>
+    <ul id="cartItems">
+      <!-- Los productos agregados se mostrarán aquí -->
+      <div id="cartTotal" class="cart-total">Total: MX$ 0.00</div>
+      <button class="pay-button" id="payButton">Pagar</button> <!-- Agregamos el botón "Pagar" -->
+    </ul>
+  </div>
+</div>
+
+<!-- Panel de pago -->
+<div id="paymentPanel" class="payment-panel">
+ <span class="close-button" id="closeButton">&times;</span> <!-- Botón de cierre "X" -->
+  <h3>Detalles de Pago</h3>
+  <form id="paymentForm">
+    <div class="form-group">
+      <label for="name">Nombre completo:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="cardNumber">Número de tarjeta:</label>
+      <input type="text" id="cardNumber" name="cardNumber" required>
+    </div>
+    <!-- Agrega más campos de información de pago según sea necesario -->
+    <button type="submit" class="pay-button">Realizar Pago</button>
+  </form>
+</div>
+  
+  <!-- Slider con imágenes -->
+  <div class="slider">
+    <h4 style="text-align: center;">Explora nuestra amplia selección de puertas de cochera de alta calidad.</h4>
+    <ul>
+      <!-- Imágenes para el slider -->
+      <li><img src="img/1.png" alt=""></li>
+      <li><img src="img/2.png" alt=""></li>
+      <li><img src="img/3.png" alt=""></li>
+    </ul>
+  </div>
+
+  <!-- Sección "Acerca de" -->
+  <section id="acerca" class="fade-section active">
+    <h2>Acerca de</h2>
+    <div class="content-container">
+      <div class="text-container">
+        <!-- Contenido del texto -->
+        <p>Somos una empresa dedicada a brindar soluciones integrales en el ámbito de puertas automáticas, rodamientos, andenes y control de acceso. Nuestro compromiso es ofrecer productos de alta calidad y servicios confiables a nuestros clientes. Contamos con un equipo de profesionales experimentados que se esfuerzan por satisfacer todas las necesidades de nuestros clientes. Si buscas soluciones eficientes y seguras para tus puertas de cochera, ¡somos tu mejor opción!</p>
+        <h4>Puertas de garaje de uso residencial de la mejor calidad</h4>
+        <ul>
+          <!-- Lista de opciones -->
+          <li>Puertas lisas con textura, en modelo cuadro corto, modelo a rayas en color blanco, café, gris, negro.</li>
+          <li>Imitación madera con textura en modelo a rayas en clara y oscura.</li>
+          <li>Imitación madera sin textura en modelo a rayas en clara y oscura.</li>
+        </ul>
+      </div>
+      <div class="image-container">
+        <!-- Imagen para esta sección -->
+        <img src="img/acerca.jpg" alt="Puertas de garaje" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Línea divisoria -->
+  <div class="col-md-12 text-center white">
+    <hr class="bottom-line white-bg">
+  </div>
+
+  <!-- Sección "Paquetes" -->
+  <section id="Paquetes" class="fade-section active">
+    <h2 style="text-align: center;">Paquetes de nuestros productos</h2>
+    <h4 style="text-align: center;">Explora nuestra amplia selección de puertas de cochera de alta calidad.</h4>
+    <div class="column-container" style="display: flex; justify-content: center;">
+      <!-- Primer columna de paquete -->
+      <div class="column" style="width: 300px; text-align: justify;">
+        <h4>Motor sencillo de garaje de uso residencial para puertas pequeñas de bajo peso.</h4>
+        <ul>
+          <li>Motor de 1/2 HP.</li>
+          <li>Hasta 50 controles inalámbricos.</li>
+          <li>Función de cierre automático.</li>
+          <li>Compatible con cualquier tipo de botón de apertura (COM y NO, función paso a paso).</li>
+          <li>Alarma por mantenimiento preventivo.</li>
+          <li>Salida de 24vcd para conexión de cerradura eléctrica.</li>
+          <li>Incluye 2 controles y 1 botonera de pared inalámbrica.</li>
+          <!-- Imagen para este paquete -->
+          <div style="text-align: center; margin-top: 20px;">
+            <img src="img/garaje1.jpg" alt="Garaje" style="width: 300px; height: auto; margin-top: 50px;">
+          </div>
+        </ul>
+        <h5 style="text-align: center;">*Batería de respaldo no incluida</h5>
+        <div class="buy-container">
+          <!-- Botón de compra y precio -->
+          <button class="buy-button" type="submit">Comprar</button>
+		  <p class="price">MX$ 5,122</p>
+        </div>
+      </div>
+
+      <!-- Segunda columna de paquete -->
+      <div class="column" style="width: 300px; text-align: justify;">
+        <h4>Abridor de puerta de garaje con respaldo de batería Wi-Fi de transmisión por cadena en riel tubular.</h4>
+        <ul>
+          <li>Control por teléfono inteligente: controle, asegure y supervise el garaje con la aplicación myQ, en cualquier momento y desde cualquier lugar.</li>
+          <li>Respaldo de batería: abre/cierra la puerta del garaje incluso cuando no hay energía.</li>
+          <li>Tipo de transmisión: transmisión por cadena de larga duración, en sistema de riel tubular.</li>
+          <li>Tecnología de garaje de próxima generación: conectividad Wi-Fi® mejorada y memoria mejorada para admitir nuevas funciones de MyQ.</li>
+          <li>Incluye: 1 control, 1 botonera de pared cableada, batería de respaldo, fotoceldas.</li>
+          <!-- Imagen para este paquete -->
+          <div style="text-align: center; margin-top: 20px;">
+            <img src="img/garaje2.png" alt="Garaje" style="width: 300px; height: auto; margin-top: 20px;">
+          </div>
+        </ul>
+        <div class="buy-container">
+          <!-- Botón de compra y precio -->
+          <button class="buy-button" type="submit">Comprar</button>
+          <p class="price">MX$ 6,980</p>
+        </div>
+      </div>
+
+      <!-- Tercera columna de paquete -->
+      <div class="column" style="width: 300px; text-align: justify;">
+        <h4>Motor para puerta de garaje residencial en CC, respaldo de batería, accionamiento por cadena y Wi-Fi en riel tubular para fijaciones más rígidas.</h4>
+        <ul>
+          <li>El Wi-Fi® incorporado hace posible el control desde un teléfono inteligente con la aplicación myQ®.</li>
+          <li>El motor de CC entrega una operación silenciosa y sin problemas.</li>
+          <li>Accionamiento por cadena de fuerza industrial.</li>
+          <li>Tecnología para garajes de última generación: conectividad Wi-Fi mejorada y memoria optimizada para admitir nuevas funciones y soluciones de myQ.</li>
+          <li>Tecnología Bluetooth integrada: reduce el tiempo de configuración y facilita aún más la conexión a la aplicación myQ, a otros dispositivos myQ y a soluciones basadas en la tecnología para hogares inteligentes.</li>
+          <li>myQ Diagnostics en la aplicación de myQ proporciona información en tiempo real para la puerta de su garaje a través del informe de salud. Reciba alertas y códigos de error en la aplicación si surge un problema y conéctese con un profesional para recibir servicios si es necesario.</li>
+          <li>Incluye: 1 control, 1 botonera de pared cableada, batería de respaldo, fotoceldas.</li>
+          <!-- Imagen para este paquete -->
+          <div style="text-align: center; margin-top: 20px;">
+            <img src="img/garaje3.png" alt="Garaje" style="width: 300px; height: auto; margin-top: 20px;">
+          </div>
+        </ul>
+        <div class="buy-container">
+          <!-- Botón de compra y precio -->
+          <button class="buy-button" type="submit">Comprar</button>
+          <p class="price">MX$ 7,320</p>
+        </div>
+      </div>
+
+      <!-- Cuarta columna de paquete -->
+      <div class="column" style="width: 300px; text-align: justify;">
+        <h4>Motor de gran capacidad de fuerza para garaje con Wi-Fi, montaje en la pared y respaldo de batería de CC.</h4>
+        <ul>
+          <li>Abre-puerta de garaje con Wi-Fi, montaje en la pared y respaldo de batería de CC.</li>
+          <li>El diseño de montaje en la pared libera espacio en el techo en el garaje y disminuye el ruido y la vibración.</li>
+          <li>El Wi-Fi® hace posible el control desde el teléfono celular con la aplicación MyQ®.</li>
+          <li>El respaldo de batería le permite abrir/cerrar la puerta incluso cuando hay un corte en el suministro de electricidad.</li>
+          <li>Incluye iluminación LED remota MyQ de 1,500 lúmenes.</li>
+          <li>El cerrojo automático de la puerta del garaje bloquea la puerta después de cerrarla.</li>
+          <li>Incluye: 1 control, 1 botonera de pared cableada, batería de respaldo, fotoceldas, cerrojo, lámpara LED.</li>
+          <!-- Imagen para este paquete -->
+          <div style="text-align: center; margin-top: 20px;">
+            <img src="img/garaje4.jpg" alt="Garaje" style="width: 300px; height: auto; margin-top: 145px;">
+          </div>
+        </ul>
+        <div class="buy-container">
+          <!-- Botón de compra y precio -->
+          <button class="buy-button" type="submit">Comprar</button>
+          <p class="price">MX$ 14,892</p>
+        </div>
+      </div>
+
+
+      <!-- Quinta columna de paquete -->
+      <div class="column" style="width: 300px; text-align: justify;">
+        <h4>Motor de garaje de alto rendimiento en CC de gran fuerza.</h4>
+        <ul>
+          <li>Funcionamiento silencioso.</li>
+          <li>Arranque y paro suave.</li>
+          <li>PosiLock® protege electrónicamente la puerta contra una apertura forzada.</li>
+          <li>Batería de respaldo opcional que garantiza el funcionamiento del abrepuertas durante fallas de energía eléctrica.</li>
+          <li>Usos del producto: Este equipo está diseñado para cualquier tipo de apertura de puertas con un perfecto desempeño.</li>
+        </ul>
+        <h5>Beneficios:</h5>
+        <ul>
+          <li>Ajuste electrónico de límites.</li>
+          <li>Se puede agregar una batería de respaldo para garantizar su funcionamiento en caso de cortes de energía eléctrica.</li>
+        </ul>
+        <h5>Característica técnica principal:</h5>
+        <ul>
+          <li>Este dispositivo puede usarse en puertas seccionales, abatibles, corredizas y/o ascendentes.</li>
+          <li>Para puertas ligeras y medianas.</li>
+          <!-- Imagen para este paquete -->
+          <div style="text-align: center; margin-top: 20px;">
+            <img src="img/garaje5.jpg" alt="Garaje" style="width: 300px; height: auto; margin-top: 20px;">
+          </div>
+        </ul>
+        <div class="buy-container">
+          <!-- Botón de compra y precio -->
+          <button class="buy-button" type="submit">Comprar</button>
+          <p class="price">MX$ 8,344</p>
+        </div>
+      </div>
+
+      <!-- Sexta columna de paquete -->
+      <div class="column" style="width: 300px; text-align: justify;">
+        <h4>Operador de garaje industrial de alta potencia.</h4>
+        <ul>
+          <li>Para uso industrial.</li>
+          <li>Motor de alta potencia.</li>
+          <li>Control remoto.</li>
+          <li>Construcción resistente.</li>
+          <li>Incluye: 2 controles remotos, receptor y fotocélulas.</li>
+        </ul>
+        <h5>Características:</h5>
+        <ul>
+          <li>Motor: 1 HP.</li>
+          <li>Peso máximo de la puerta: 600 kg.</li>
+          <li>Tiempo de apertura/cierre: 15-20 segundos.</li>
+          <li>Uso intensivo.</li>
+          <!-- Imagen para este paquete -->
+          <div style="text-align: center; margin-top: 20px;">
+            <img src="img/garaje61.png" alt="Garaje" style="width: 300px; height: auto; margin-top: 210px;">
+          </div>
+        </ul>
+        <div class="buy-container">
+          <!-- Botón de compra y precio -->
+          <button class="buy-button" type="submit">Comprar</button>
+          <p class="price">MX$ 23,842</p>
+        </div>
+      </div>
+
+      <!-- Séptima columna de paquete -->
+      <div class="column" style="width: 300px; text-align: justify;">
+        <h4>Motor para puertas en uso industrial de pequeño y gran tamaño.</h4>
+        <ul>
+          <li>Ciclo de servicio: 25 por hora; hasta 90 ciclos por día.</li>
+          <li>Montaje lateral a la pared para puertas verticales o de gran elevación.</li>
+          <li>Rejas y puertas enrollables.</li>
+          <li>Montaje en pared o cubierta.</li>
+          <li>Incluye: 2 controles remotos, receptor y fotocélulas.</li>
+          <li>Temporizador de cierre integrado programable de 5 a 60 segundos en incrementos de 5 segundos.</li>
+          <li>Permite el cierre automático por temporizador de una puerta una vez que esta se termina de abrir por completo.</li>
+        </ul>
+        <h5>Características:</h5>
+        <ul>
+          <li>Motor: 1 HP.</li>
+          <li>Peso máximo de la puerta: 600 kg.</li>
+          <li>Tiempo de apertura/cierre: 15-20 segundos.</li>
+          <li>Uso intensivo.</li>
+          <!-- Imagen para este paquete -->
+          <div style="text-align: center; margin-top: 20px;">
+            <img src="img/garaje.png" alt="Garaje" style="width: 300px; height: auto; margin-top: 20px;">
+          </div>
+        </ul>
+        <div class="buy-container">
+          <!-- Botón de compra y precio -->
+          <button class="buy-button" onclick="openWhatsApp()">Contactar</button>
+          <p class="price">MX$ Precio a cotizar, pedir información.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="col-md-12 text-center white">
+    <hr class="bottom-line white-bg">
+  </div>
+
+  <!-- Sección de Servicios -->
+  <section id="servicios" class="fade-section active">
+    <h2>Servicios</h2>
+    <div class="column-container">
+      <!-- Primer servicio -->
+      <div class="column">
+        <h3>Servicio Estándar🌐🌐</h3>
+        <ul>
+          <li>Venta de productos a domicilio.</li>
+          <li>Asesoramiento sobre los productos disponibles.</li>
+          <li>Entrega rápida y segura.</li>
+          <li>Atención al cliente para resolver dudas.</li>
+        </ul>
+      </div>
+      <!-- Segundo servicio -->
+      <div class="column">
+        <h3>Servicio Premium🤑🤑</h3>
+        <ul>
+          <li>Venta de productos a domicilio.</li>
+          <li>Asesoramiento personalizado sobre los productos disponibles.</li>
+          <li>Instalación profesional de los productos adquiridos.</li>
+          <li>Garantía extendida en productos e instalación.</li>
+          <li>Atención al cliente especializada.</li>
+        </ul>
+      </div>
+	  <!-- Tercer servicio -->
+      <div class="column">
+        <h3>01 - Puertas de Garaje</h3>
+		<ul>
+     <li>Instalamos de puertas de garaje modernas que combina funcionalidad y estética para realzar la apariencia de tu propiedad. Desde la selección del modelo acorde al estilo arquitectónico, nuestro trabajo garantiza una mejora visual y funcional. Con componentes de alta calidad.
+		 Modelos: Liso, cuadro corto
+		 Colores: Blanco, Café, gris, negro, imitacion madera claro, imitacion madera oscuro.
+		 Sin textura: Imitacion madera oscuro y claro.</li>
+
+	<li>Ademas de contar con puertas de importación (Bajo pedido)</li> 
+        </ul>
+		<div style="text-align: center; margin-top: 20px;">
+            <img src="img/cervan.png" alt="Garaje" style="width: 300px; height: auto; margin-top: 20px;">
+          </div>
+      </div>
+	  <!-- Cuarto servicio -->
+      <div class="column">
+        <h3>01.1 - Motores para puertas de garaje y anden</h3>
+		<ul>
+	<li>Los motores de garaje vienen en diversas variantes para adaptarse a diferentes necesidades. Desde los modelos residenciales con funciones inteligentes y de respaldo, hasta los motores de pared y aquellos diseñados para entornos industriales, cada tipo de motor ofrece características específicas para satisfacer las demandas de automatización y control de puertas en diversos contextos.</li>
+		</ul>
+		<div style="text-align: center; margin-top: 20px;">
+            <img src="img/cervan2.png" alt="Garaje" style="width: 300px; height: auto; margin-top: 50px;"> 
+          </div>
+      </div>
+	  <!-- Quinto servicio -->
+      <div class="column">
+        <h3>02 - Puertas de Anden - Comerciales</h3>
+		<ul>
+    <li>Nuestros servicios incluyen puertas de alta capacidad para uso comercial e industrial.  Las puertas comerciales son de uso rudo y de alto rendimiento, proporcionando una mayor eficiencia y durabilidad. Ideal para hoteles, entradas comerciales, almacenes y más.  Proporcionamos instalación y mantenimiento de puertas de andén para facilitar la carga y descarga eficiente de mercancías en entornos industriales.</li> 
+	<li>Nuestras puertas de andén garantizan un funcionamiento suave y seguro. Que incluyen puertas de elevación estándar, elevación alta, elevación vertical y elevación alta con inclinación. Contamos con reparaciones, variedad de herrajes, cambio de secciones y sustitucion de piezas. </li>
+        </ul>
+		<div style="text-align: center; margin-top: 20px;">
+            <img src="img/cervan3.png" alt="Garaje" style="width: 300px; height: auto; margin-top: 20px;"> 
+          </div>
+      </div>
+	  <!-- Sexto servicio -->
+      <div class="column">
+        <h3>03 - Puertas corredizas</h3>
+		<ul>
+    <li>Nuestro servicio de instalación de operadores automáticos para puertas corredizas, diseñado para brindarle tranquilidad y eficacia en su hogar. Desde 200 hasta 800 kilos, motores con características destacadas como aprendizaje automático de finales de carrera y cierre automático ajustable. Con su motor de cremallera, ofrece un funcionamiento confiable y duradero con un tiempo de vida útil de 3000 horas. Brindamos garantía de 1 año ofreciendo la tranquilidad que busca. ¡Haga de su residencia un lugar seguro y accesible con nuestro servicio confiable y eficaz!</li> 
+        </ul>
+		<div style="text-align: center; margin-top: 20px;">
+            <img src="img/cervan4.png" alt="Garaje" style="width: 300px; height: auto; margin-top: 55px;"> 
+          </div>
+      </div>
+	  <!-- Septimo servicio -->
+      <div class="column">
+        <h3>04 - Puertas abatibles</h3>
+		<ul>
+    <li>Calidad, rendimiento y seguridad. Instalación del abrepuertas en cada hoja de la puerta. Adaptación a dimensiones y diseño específicos. Batería de respaldo en caso de cortes de energía (depende del equipo). Incluye 2 controles para operar la puerta abatible (En todos los equipos). Posibilidad de añadir dispositivos adicionales como fotoceldas de seguridad, lámpara destellante, pulsador de activación y topes de apertura y cierre. Servicio de calidad, seguridad y comodidad en la automatización de puertas abatibles residenciales.  </li>
+        </ul>
+		<div style="text-align: center; margin-top: 20px;">
+            <img src="img/cervan5.png" alt="Garaje" style="width: 300px; height: auto; margin-top: 50px;"> 
+          </div>
+      </div>
+	  <!-- Octavo servicio -->
+      <div class="column">
+        <h3>05 - Barreras</h3>
+		<ul>
+    <li>Nuestro equipo se enorgullece en ofrecer la instalación de barreras vehiculares que presentan un rendimiento y durabilidad excepcionales. Entre la multitud de opciones en el mercado de acceso vehicular, resaltamos las barreras hidráulicas por su capacidad de controlar el tráfico con eficiencia. A pesar de la creencia en su elevado costo, su durabilidad a largo plazo las convierte en inversiones sumamente económicas. Estas barreras se destacan por su mecanismo de transmisión simple que carece de engranes, lo cual contribuye a su longevidad y operación silenciosa.</li>      
+        </ul>
+		<div style="text-align: center; margin-top: 20px;">
+            <img src="img/cervan6.png" alt="Garaje" style="width: 300px; height: auto; margin-top: 20px;"> 
+          </div>
+      </div>
+	  <!-- Noveno servicio -->
+      <div class="column">
+        <h3>06 - Puertas de acordeon</h3>
+		<ul>
+    <li>Nuestra equipo se enorgullece de ofrecer una solucion a los espacios reducidos, a afrotar las necesidades y a solucionar las instalaciones de puertas de acordeon que exigen una apertura total. Contamos con la instalación eficiente y garantizada de los innovadores kits "Doble-Plegado" de importacion italiana, una solución compacta y funcional para puertas plegables. Estos kits, ideales para espacios reducidos, proporcionan una combinación perfecta de calidad, tecnología y vanguardia. </li>
+	<li>Ofrecemos dos versiones "Doble-Plegado" HD (Heavy Duty) y el "Doble-Plegado" Residencial, cada uno con características específicas.  </li>      
+        </ul>
+		<div style="text-align: center; margin-top: 20px;">
+            <img src="img/cervan7.png" alt="Garaje" style="width: 300px; height: auto; margin-top: 100px;"> 
+          </div>
+      </div>
+	  <!-- Decimo servicio -->
+      <div class="column">
+        <h3>07 - Telescopicas</h3>
+		<ul>
+    <li>Ofrecemos la instalación eficiente y garantizada de los innovadores kits para portones telescópicos, una solución que encarna la innovación, la tecnología y la calidad. Estos kits de puertas telescópicas son ideales para optimizar el espacio en áreas donde las puertas correderas tradicionales no son viables. Con una o más hojas que se desplazan lateralmente, estas puertas brindan soluciones efectivas para delimitar accesos industriales, comerciales o privados con máxima seguridad y calidad.</li>
+	<li>Nuestros kits incluyen componentes y accesorios que garantizan una instalación eficaz y cumplen con altos estándares de calidad. El kit telescópico de dos hojas, por ejemplo, es perfecto para aplicaciones con múltiples aperturas diarias y se adapta a diferentes tamaños de apertura. </li>     
+        </ul>
+		<div style="text-align: center; margin-top: 20px;">
+            <img src="img/cervan8.png" alt="Garaje" style="width: 300px; height: auto; margin-top: 20px;"> 
+          </div>
+      </div>
+	  <!-- Onceavo servicio -->
+      <div class="column">
+        <h3>08 - Autoportantes</h3>
+		<ul>
+    <li>Las puertas autoportantes son ideales cuando es necesario evitar raíles en el suelo, permitiendo una estructura suspendida que se adapta a terrenos irregulares o condiciones climáticas extremas. Nuestros kits autoportantes se distinguen por su seguridad, robustez, funcionalidad y vanguardia, siendo adecuados tambien para entornos industriales y comerciales. </li>
+	<li>Kits diseñados con accesorios y componentes específicos, garantizamos una solución a medida para cada tipo de puerta autoportante, dependiendo de sus medidas, peso, y tipo de suelo y las necesidades individuales. Es recomendable hacer un calculo estructural previo para la instalación de estos kits.  </li>     
+        </ul>
+		<div style="text-align: center; margin-top: 20px;">
+            <img src="img/cervan9.png" alt="Garaje" style="width: 300px; height: auto; margin-top: 20px;"> 
+          </div>
+      </div>
+	  <!-- Doceavo servicio -->
+      <div class="column">
+        <h3>09 - Deslizante de riel superior</h3>
+		<ul>
+    <li>Dejamos a su dispocicion una instalación de primera categoría para puertas de monorail o puertas deslizantes, con un enfoque en la eficiencia y la satisfacción del cliente garantizada. Nuestros kits aseguran la calidad italiana y un rodamiento suave para un funcionamiento óptimo. Adaptamos cada instalación según las necesidades específicas del proyecto, utilizando ruedas que soportan desde 300 hasta 600 kilos, haciendo enfásis en cada rueda, lo cual cada puerta puede llevar de 2 a 4 ruedas cargando la puerta. Y proporcionamos raíles dedicados para cada tipo de portón suspendido. </li>
+	<li>Ademas que damos garantía tando de nuestro trabajo como del equipo instalado. Ya sea que estés buscando instalar un nuevo portón o mejorar el sistema existente con ruedas de mayor resistencia, nuestro kit de monorail en la trabe, diseñado para un recorrido fluido, es la elección adecuada para tu proyecto.    </li>   
+        </ul>
+		<div style="text-align: center; margin-top: 20px;">
+            <img src="img/cervan10.png" alt="Garaje" style="width: 300px; height: auto; margin-top: 20px;"> 
+          </div>
+      </div>
+	  <!-- Treceavo servicio -->
+      <div class="column">
+        <h3>010 - Giro lateral</h3>
+		<ul>
+    <li>Nos enorgullece de presentar la instalación de vanguardia y eficiente del innovador kit de Giro Lateral de importación italiana, un sistema de puerta revolucionario que gira en curva, diseñado satisfacer las necesidades de nuestros clientes más exigentes. Este kit, ofrece altas prestaciones y máxima libertad al aprovechar ángulos y curvas. </li>
+	<li>Ya sea en espacios estrechos o en edificios antiguos, donde las puertas batientes no son prácticas, el kit de Giro Lateral ofrece una solución innovadora y adaptable. Con ruedas giratorias a 360° en cada hoja que permiten un deslizamiento suave por el raíl curvo, este kit brinda ventajas notables, como una apertura ilimitada y peso máximo de puerta de 500 kg. Los estándares de calidad garantizan un producto confiable. El kit importado cuenta con la certificación UNI EN ISO 9001 que avala garantia, calidad y eficiencia. </li>      
+        </ul>
+		<div style="text-align: center; margin-top: 20px;">
+            <img src="img/cervan11.png" alt="Garaje" style="width: 300px; height: auto; margin-top: 20px;"> 
+          </div>
+      </div>
+	  <!-- Catorceavo servicio -->
+      <div class="column">
+        <h3>011 - Cerraduras</h3>
+		<div style="text-align: center; margin-top: 20px;">
+            <img src="img/cervan12.png" alt="Garaje" style="width: 300px; height: auto; margin-top: 20px;"> 
+          </div>
+      </div>
+	  <!-- Quinceavo servicio -->
+      <div class="column">
+        <h3>012 - Control de acceso y otros</h3>
+		<ul>
+    <li>Diversos Controles y Receptores: Se ofrecen diferentes tipos de controles y receptores, como llaveros, receptores de pulso mantenido, receptores de dip switch, receptores de largo alcance y receptores administrables para sistemas de acceso. También se mencionan receptores de largo alcance de alta definición con un alcance de 500 metros. </li>
+	<li>Acceso con Lector de Largo Alcance: Se ofrece un servicio de instalación de lectores de largo alcance para sistemas de control de acceso vehicular. Incluye configuración, calibración y suministro de etiquetas (tags) necesarias para el sistema. Se proporciona capacitación básica para utilizar y administrar el sistema. </li>
+	<li>Sensor de Masa: Ofrecen instalación y configuración de sensores de masa en sistemas comerciales e industriales. Estos sensores son ideales para la automatización de puertas y barreras vehiculares, utilizando tecnología de circuito inductivo para detección de presencia. </li>
+	<li>Control de Acceso con Tarjeta: Implementación de sistemas de control de acceso basados en tarjetas para áreas comerciales, facilitando la gestión de accesos autorizados. </li>
+	<li>Apertura de Portones por Llamada Telefónica o App Móvil: Ofrecen soluciones de control de acceso que permiten a usuarios autorizados abrir y cerrar portones utilizando llamadas telefónicas o aplicaciones móviles, con opciones de administración a través de software o en la nube. </li>
+	<li>Topes y Dispositivos de Seguridad: Se mencionan topes de estacionamiento de caucho rígido para minimizar daños a los vehículos. También se habla de topes reductores para un funcionamiento seguro de los portones, evitando accidentes. </li>
+	<li>Puertas Peatonales: Se ofrecen diversas soluciones para puertas peatonales, incluyendo cierra puertas, cerraduras eléctricas con tarjetas o llaves electrónicas, y sistemas de batería de respaldo. </li>
+	<li>Creación de Puertas Peatonales: Se realizan puertas peatonales utilizando secciones de puertas de garaje, con opciones de apertura mediante tarjeta electrónica y otros componentes.  <//li>    
+        </ul>
+		<div style="text-align: center; margin-top: 20px;">
+            <img src="img/cervan13.png" alt="Garaje" style="width: 300px; height: auto; margin-top: 20px;"> 
+          </div>
+      </div>
+	   <!-- Dieciseisavo servicio -->
+      <div class="column">
+        <h3>013 - Rodamiento</h3>
+		<ul>
+    <li>El uso de rodamientos profesionales en portones corredizos, abatibles y deslizantes en riel superior, ofrece numerosas ventajas y mejoras significativas en comparación con los rodamientos de herrería con ángulo de herrería como riel. Estos rodamientos profesionales destacan por su alta durabilidad, funcionamiento ligero incluso en portones pesados, diseño especializado para un ajuste perfecto, resistencia a cargas pesadas, menor necesidad de mantenimiento, mejor inversión a largo plazo y una calidad superior. Estas características combinadas garantizan un deslizamiento suave, un rendimiento confiable y una experiencia de usuario mejorada, lo cual los convierte en la elección ideal para asegurar un funcionamiento óptimo y duradero de los portones.</li>      
+        </ul>
+		<div style="text-align: center; margin-top: 20px;">
+            <img src="img/cervan14.png" alt="Garaje" style="width: 300px; height: auto; margin-top: 550px;"> 
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="col-md-12 text-center white">
+    <hr class="bottom-line white-bg">
+  </div>
+
+  <!-- Sección de Contacto -->
+  <section id="contacto" class="fade-section active">
+    <h2>Contacto</h2>
+    <div class="contact-container">
+      <!-- Información de contacto -->
+      <div class="contact-info">
+        <h3>Información de Contacto</h3>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> Dirección: cervan.service@outlook.com</li>
+          <li><i class="fas fa-phone-alt"></i> Teléfono: 6631012147</li>
+          <li><i class="fas fa-envelope"></i> Email: </li>
+        </ul>
+      </div>
+      <!-- Formulario de contacto -->
+      <div class="contact-form">
+        <h3>Envíanos un mensaje</h3>
+        <form action="#" method="POST">
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Nombre" required>
+          </div>
+          <div class="form-group">
+            <input type="text" id="phone" name="phone" placeholder="Teléfono" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Email" required>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" rows="4" placeholder="Mensaje" required></textarea>
+          </div>
+          <div class="button-container">
+            <button type="submit">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 CERVAN ACCES. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

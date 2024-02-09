@@ -1,0 +1,103 @@
+/* Estilos Generales */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Ajusta los estilos del encabezado */
+header {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+   margin: 0; /* Remueve cualquier margen */
+}
+
+header img {
+  max-width: 150px;
+  height: auto;
+  margin: 10px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+p {
+  font-size: 14px;
+}
+
+/* Ajusta los estilos de la barra de navegación */
+nav {
+  margin-top: -1px; /* Margen negativo para eliminar el espacio */
+  display: flex;
+  justify-content: center;
+  background-color: #333333;
+  padding: 10px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+/* Ajusta el espaciado del collage */
+.collage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.collage-image {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.collage-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.collage-image:hover {
+  transform: scale(1.05);
+}
+
+/* Estilos para la superposición */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#expanded-image {
+  max-width: 90%;
+  max-height: 90%;
+}

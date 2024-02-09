@@ -1,0 +1,883 @@
+/* Estilos CSS */
+
+/* Estilos para el logo */
+header img {
+  max-width: 260px; /* Ajusta el tamaño máximo del logo */
+  height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+  margin: 40px; /* Margen para separar el logo del borde de la ventana */
+  position: absolute; /* Posición absoluta para que podamos colocarlo en la esquina */
+  top: -30px; /* Distancia desde la parte superior */
+  left: 40px;  /* Distancia desde la parte izquierda */
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  color: #555555;
+}
+
+header {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  margin: 10px auto 20px;
+  max-width: 800px;
+  line-height: 1.5;
+}
+
+/* Estilos para el carrusel de imágenes */
+.slider {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider ul {
+  display: flex;
+  padding: 0; /* Modifica el ancho para el número de imágenes que tengas */
+  width: 300%; /* Ajusta el tiempo y la animación según tus necesidades */
+  animation: cambio 18s infinite;
+}
+
+.slider li {
+  width: 100%;
+  list-style: none;
+}
+
+.slider img {
+  width: 100%; /* Ajusta el ancho de las imágenes */
+  height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+  max-height: 600px; /* Establece una altura máxima para evitar que las imágenes sean demasiado altas */
+}
+
+@keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  33.33% {
+    margin-left: 0;
+  }
+  38.66% {
+    margin-left: -100%;
+  }
+  66.66% {
+    margin-left: -100%;
+  }
+  72% {
+    margin-left: -200%;
+  }
+  100% {
+    margin-left: -200%;
+  }
+}
+
+/* Estilos para la barra de navegación */
+nav {
+  background-color: #333333;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 5px 10px;
+  transition: color 0.3s ease-in-out;
+  font-size: 18px;
+}
+
+nav a.active {
+  color: #ff9900;
+  animation: pulse 0.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+nav a:hover {
+  color: #ff9900;
+}
+
+section {
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Estilos para la versión móvil */
+    @media screen and (max-width: 600px) {
+      .menu-icon {
+        display: block;
+        padding: 10px;
+        color: #ffffff;
+        text-align: right;
+        cursor: pointer;
+      }
+      
+      .nav-collapse {
+        display: none;
+        background-color: #333333;
+      }
+      
+      .nav-collapse.active {
+        display: block;
+      }
+      
+      .nav-collapse a {
+        padding: 15px;
+        border-bottom: 1px solid #ffffff;
+      }
+      
+      .nav-collapse a:last-child {
+        border-bottom: none;
+      }
+    }
+
+/* Estilos para las columnas de servicios */
+.column {
+  flex: 0 0 calc(50% - 20px);
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-align: justify;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  line-height: 1.5;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  background-color: #ffffff;
+  color: #555555;
+}
+
+.column:hover {
+  transform: translateY(-5px);
+}
+
+@media screen and (max-width: 768px) {
+  .column {
+    flex: 0 0 100%;
+  }
+}
+
+.column:last-child {
+  border-right: none;
+}
+
+/* Estilos para los contenedores de contacto */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact-info {
+  width: 40%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+  width: 55%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h3,
+.contact-form h3 {
+  margin-top: 0;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info ul li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-info ul li i {
+  margin-right: 10px;
+  font-size: 18px;
+  color: #333333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.button-container {
+  text-align: right;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  background-color: #228B22;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button-container button:hover {
+  background-color: #1A741A;
+}
+
+button[type='submit'] {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Estilos para las imágenes */
+.image-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.image {
+  /* Tamaño máximo de las imágenes */
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  /* Borde redondeado */
+  border-radius: 5px;
+  /* Sombra suave */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Margen inferior para separar las imágenes */
+  margin-bottom: 20px;
+}
+
+/* Estilos para el botón de comprar */
+.buy-button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 15px 30px;
+    /* Ajusta el tamaño del botón */
+    font-size: 18px;
+    /* Ajusta el tamaño del texto */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+
+/* Estilos al pasar el mouse sobre el botón de comprar */
+.buy-button:hover {
+    background-color: #45a049;
+  }
+
+/* Estilos para el precio */
+.price {
+  font-size: 24px;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333; /* Cambia el color del precio para que contraste con el fondo */
+}
+
+/* Estilos para el contenedor del botón y el precio */
+.buy-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Ajusta este margen según tus necesidades */
+  margin-top: 30px;
+}
+
+/* Nuevos estilos */
+.column-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.column {
+  flex: 0 0 calc(50% - 20px);
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-align: justify;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  background-color: #ffffff;
+  color: #555555;
+}
+
+.column:hover {
+  transform: translateY(-5px);
+}
+
+@media screen and (max-width: 768px) {
+  .column {
+    flex: 0 0 100%;
+  }
+}
+
+.column:last-child {
+  border-right: none;
+}
+
+/* Estilos para la sección "Acerca de" */
+#acerca {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+#acerca h2 {
+  font-size: 36px;
+  color: #333333;
+  margin-bottom: 20px;
+  /* Alineamos el título a la izquierda */
+  max-width: 650px;
+}
+
+#acerca p {
+  font-size: 18px;
+  color: #555555;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  /* Alineamos el texto a la izquierda */
+  text-align: left;
+}
+
+/* Estilos para el título "Puertas de garaje de uso residencial de la mejor calidad" */
+#acerca h4 {
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+#acerca ul {
+  list-style: disc;
+  padding: 0;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+#acerca li {
+  font-size: 18px;
+  color: #555555;
+  line-height: 1.6;
+  margin: 0 15px;
+  max-width: 300px;
+}
+
+/* Estilos para la imagen */
+#acerca img {
+  max-width: 400px;
+  height: auto;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+#acerca .content-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#acerca .text-container {
+  flex: 0 0 calc(60% - 20px);
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+#acerca .image-container {
+  flex: 0 0 calc(40% - 20px);
+}
+
+/* Estilos para los contenedores de servicios */
+#acerca .service-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+#acerca .service-container h3 {
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+#acerca .service-container p {
+  font-size: 16px;
+  color: #555555;
+  margin-bottom: 20px;
+}
+
+#acerca .service-container img {
+  max-width: 200px;
+  height: auto;
+  margin: 0 auto 20px;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el carrito */
+#cart {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 9999; /* Asegura que el carrito esté en la parte superior de otros elementos */
+}
+
+.cart-button {
+  width: 40px;
+  height: 40px;
+  background-color: #007bff; /* Color de fondo del botón del carrito */
+  color: #fff; /* Color del ícono del carrito */
+  font-size: 24px;
+  border: none;
+  border-radius: 50%; /* Borde redondeado para que el botón sea circular */
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+/* Estilos para el carrito */
+#cart {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.cart-button {
+  width: 50px; /* Aumentamos el ancho del botón */
+  height: 50px; /* Aumentamos la altura del botón */
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 24px;
+  border: 1px solid #333333;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transform: scale(1.2); /* Aumentamos la escala para que se vea un poco más grande */
+  transition: transform 0.3s ease-in-out;
+}
+
+.cart-button:hover {
+  transform: scale(1.3); /* Aumentamos la escala al pasar el mouse sobre el botón */
+}
+
+
+/* Estilos para el panel del carrito */
+.cart-panel {
+  display: none;
+  position: fixed;
+  top: 100px;
+  right: 30px;
+  width: 300px;
+  max-height: 400px; /* Altura máxima del panel del carrito */
+  overflow-y: auto; /* Agregamos el scroll vertical cuando se supera la altura máxima */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-family: 'Arial', sans-serif;
+  z-index: 9999;
+}
+
+.cart-panel-visible {
+  display: block;
+}
+
+.cart-panel h3 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px; /* Añadimos un margen inferior para separar el título de la lista de productos */
+}
+
+.cart-panel ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; /* Quitamos el margen superior para que la lista de productos comience desde arriba */
+}
+
+.cart-panel li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.cart-panel li:last-child {
+  border-bottom: none;
+}
+
+.cart-product-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.cart-product-name {
+  flex: 1;
+  font-size: 16px;
+  color: #333;
+}
+
+.cart-product-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.checkout-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  color: #333;
+  font-size: 24px;
+  border: 1px solid #333;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+  z-index: 9999;
+}
+
+.checkout-button:hover {
+  background-color: #f2f2f2; /* Cambiamos el color de fondo al pasar el mouse */
+  transform: scale(1.2); /* Escala del 20% al pasar el mouse */
+}
+
+.remove-button {
+  /* Estilos para el botón de eliminación */
+  width: 24px;
+  height: 24px;
+  background-color: #f44336; /* Color rojo */
+  color: #fff; /* Color del icono (en este caso, será un aspa blanca) */
+  font-size: 18px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.remove-button:hover {
+  background-color: #d32f2f; /* Color rojo oscuro al pasar el mouse */
+}
+
+.cart-total {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.cart-product-name {
+  flex-grow: 1; /* Asegurarse de que el nombre del producto ocupe todo el espacio disponible */
+  margin-right: 10px;
+}
+
+.cart-product-image {
+  max-width: 40px;
+  max-height: 40px;
+  margin-right: 10px;
+}
+
+/* Nuevos estilos para las imágenes de los paneles */
+.column {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.column img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+  transition: transform 0.3s ease-in-out; /* Agrega una transición suave al pasar el cursor */
+}
+
+.column img:hover {
+  transform: scale(1.05); /* Escala ligeramente la imagen al pasar el cursor */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega una sombra más pronunciada */
+}
+
+/* Estilos para el botón "Pagar" */
+    .pay-button {
+      background-color: #4CAF50; /* Color de fondo */
+      color: white; /* Color del texto */
+      border: none; /* Sin borde */
+      padding: 10px 20px; /* Espaciado interno */
+      font-size: 16px; /* Tamaño de fuente */
+      cursor: pointer; /* Cursor tipo puntero al pasar sobre el botón */
+      border-radius: 4px; /* Bordes redondeados */
+      margin-top: 10px; /* Espacio superior */
+      transition: background-color 0.3s ease; /* Transición suave para el color de fondo al pasar sobre el botón */
+    }
+
+    .pay-button:hover {
+      background-color: #45a049; /* Color de fondo al pasar sobre el botón */
+    }
+	
+/* Estilos para el nuevo panel de pago */
+.payment-panel {
+    display: none; /* Inicialmente oculto */
+    background-color: #f2f2f2;
+    padding: 30px; /* Aumentamos el padding para hacerlo más grande */
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    width: 400px; /* Ajustamos el ancho del panel */
+  }
+
+  .payment-panel h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .payment-panel .form-group {
+    margin-bottom: 20px; /* Aumentamos el espacio entre los campos de formulario */
+  }
+
+  .payment-panel label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .payment-panel input {
+    width: 100%;
+    padding: 15px; /* Aumentamos el padding para hacer los campos más grandes */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 18px; /* Aumentamos el tamaño de fuente para mejorar la legibilidad */
+
+    /* Nuevos estilos para el campo de texto */
+    box-sizing: border-box; /* Hace que el ancho incluya el padding y el borde */
+    max-width: 100%; /* Limita el ancho máximo del campo al 100% del contenedor */
+  }
+
+  .payment-panel .pay-button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px; /* Aumentamos el padding del botón */
+    font-size: 18px; /* Aumentamos el tamaño de fuente para que coincida con los campos */
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 20px; /* Aumentamos el espacio entre el botón y los campos de formulario */
+    transition: background-color 0.3s ease;
+  }
+
+  .payment-panel .pay-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Estilos del botón de cierre "X" */
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .close-button:hover {
+    color: #f44336; /* Cambia el color al pasar el mouse por encima */
+  }
+  /* Media Query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  /* Estilos para el logo en dispositivos móviles */
+  header img {
+    width: 70px; /* Tamaño más pequeño para pantallas pequeñas */
+        height: 70px;
+        margin: 30px 0 10px -40px; /* Ajustar los márgenes para mover el logo a la izquierda */
+        /* Otros estilos para el logo en pantallas pequeñas */
+  }
+}
+
+/* Media Query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  /* Estilos para la sección "Acerca de" en dispositivos móviles */
+  #acerca h2 {
+    font-size: 28px;
+    max-width: 100%;
+    text-align: center;
+    margin: 20px;
+  }
+
+  #acerca p {
+    font-size: 16px;
+    text-align: left;
+    margin: 10px 20px 20px;
+  }
+
+  #acerca h4 {
+    font-size: 20px;
+    margin: 20px;
+    text-align: center;
+  }
+
+  #acerca ul {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  #acerca li {
+    font-size: 16px;
+    margin: 10px;
+    max-width: 100%;
+  }
+
+  #acerca img {
+    max-width: 100%;
+    margin: 20px;
+  }
+
+  #acerca .content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #acerca .text-container {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+
+  #acerca .image-container {
+    width: 90%;
+  }
+
+  #acerca .service-container {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  #acerca .service-container h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  #acerca .service-container p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  #acerca .service-container img {
+    max-width: 100px;
+    margin: 0 auto 10px;
+  }
+}
+
+/* Estilos para los contenedores de contacto en versiones móviles */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column; /* Cambiar a disposición en columna */
+    align-items: center; /* Centrar elementos horizontalmente */
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 90%; /* Mayor ancho para ocupar más espacio en pantallas pequeñas */
+    margin-bottom: 20px; /* Añadir margen inferior entre secciones */
+  }
+}
+

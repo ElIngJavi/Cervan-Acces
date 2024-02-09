@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collage</title>
+  <link rel="stylesheet" href="styles2.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <!-- Logo de la empresa -->
+    <img src="img/logito.png" alt="Logo de CERVAN ACCESS">
+    <h1>CERVAN ACCESS</h1>
+    <p style="text-align: center;">Puertas automáticas, Rodamiento, Andén y Control de acceso</p>
+  </header>
+  <!-- Barra de navegación -->
+  <nav>
+    <a href="index.html" onclick="cerrarVentana()">Regresar</a>
+  </nav>
+
+<div id="cart">
+  <button class="cart-button" id="cartButton">🛒</button>
+  <div id="cartPanel" class="cart-panel">
+    <h3>Carrito de Compras</h3>
+    <ul id="cartItems">
+      <!-- Los productos agregados se mostrarán aquí -->
+      <div id="cartTotal" class="cart-total">Total: MX$ 0.00</div>
+      <button class="pay-button" id="payButton">Pagar</button> <!-- Agregamos el botón "Pagar" -->
+    </ul>
+  </div>
+</div>
+
+<!-- Panel de pago -->
+<div id="paymentPanel" class="payment-panel">
+ <span class="close-button" id="closeButton">&times;</span> <!-- Botón de cierre "X" -->
+  <h3>Detalles de Pago</h3>
+  <form id="paymentForm">
+    <div class="form-group">
+      <label for="name">Nombre completo:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="cardNumber">Número de tarjeta:</label>
+      <input type="text" id="cardNumber" name="cardNumber" required>
+    </div>
+    <!-- Agrega más campos de información de pago según sea necesario -->
+    <button type="submit" class="pay-button">Realizar Pago</button>
+  </form>
+</div>
+  <div class="collage">
+	  <div class="collage-image">
+      <img src="collage/1.jpg" alt="Imagen 1">
+      </div>
+      <div class="collage-image">
+      <img src="collage/2.jpg" alt="Imagen 2">
+	  </div>
+	  <div class="collage-image">
+      <img src="collage/4.jpg" alt="Imagen 4">
+	  </div>
+	  <div class="collage-image">
+      <img src="collage/5.jpg" alt="Imagen 5">
+	  </div>
+	  <div class="collage-image">
+      <img src="collage/6.jpg" alt="Imagen 6">
+	  </div>
+	  <div class="collage-image">
+      <img src="collage/7.jpg" alt="Imagen 7">
+	  </div>
+	  <div class="collage-image">
+      <img src="collage/8.jpg" alt="Imagen 8">
+	  </div>
+	  <div class="collage-image">
+      <img src="collage/9.jpg" alt="Imagen 9">
+	  </div>
+	  <div class="collage-image">
+      <img src="collage/10.jpg" alt="Imagen 10">
+	  </div>
+	  <div class="collage-image">
+      <img src="collage/11.jpg" alt="Imagen 11">
+	  </div>
+	  <div class="collage-image">
+      <img src="collage/12.jpg" alt="Imagen 12">
+	  </div>
+	  <div class="collage-image">
+      <img src="collage/13.jpg" alt="Imagen 13">
+	  </div>
+	  <div class="collage-image">
+      <img src="collage/14.jpg" alt="Imagen 14">
+	  </div>
+	  <div class="collage-image">
+      <img src="collage/15.jpg" alt="Imagen 15">
+	  </div>
+	  <div class="collage-image">
+      <img src="collage/16.jpg" alt="Imagen 16">
+	  </div>
+	  <div class="collage-image">
+      <img src="collage/17.jpg" alt="Imagen 17">
+	  </div>
+	  <div class="collage-image">
+      <img src="collage/18.jpg" alt="Imagen 18">
+	  </div>
+	  <div class="collage-image">
+      <img src="collage/19.jpg" alt="Imagen 19">
+	  </div>
+	  <div class="collage-image">
+      <img src="collage/20.jpg" alt="Imagen 20">
+	  </div>	  
+ <div class="overlay">
+    <img id="expanded-image" src="" alt="Imagen Ampliada">
+  </div>
+  
+  <script src="script2.js"></script>
+</body>
+</html>
