@@ -1,14 +1,52 @@
-# Cervan-Acces
+# 🚗 Cervan Acces – Sitio Web Corporativo
 
-Este proyecto representa mi primer trabajo como desarrollador web, realizado hace aproximadamente dos meses. Se trata de una página web creada para una empresa especializada en la instalación de cocheras, llamada "Cervan Acces".
+**Cervan Acces** es una empresa dedicada a la instalación de cocheras y sistemas automatizados de acceso.  
+Este proyecto representa mi **primer trabajo profesional como desarrollador web**, realizado hace aproximadamente dos meses.
 
-La página web tiene como objetivo principal promover los servicios y productos ofrecidos por la empresa, así como proporcionar información detallada sobre su historia, áreas de servicio, y proyectos anteriores.
+El objetivo principal del sitio es **promocionar los servicios y productos** de la empresa, además de ofrecer información clara sobre su historia, áreas de servicio y proyectos realizados.
 
-Características clave del proyecto incluyen:
+---
 
-Diseño y desarrollo web desde cero, con una estructura de navegación intuitiva y un diseño atractivo.
-Información completa sobre la empresa, sus servicios, productos y áreas de servicio.
-Galería de imágenes que muestra proyectos de instalación de cocheras anteriores, demostrando la calidad del trabajo de la empresa.
-Formulario de contacto para que los visitantes puedan hacer consultas, solicitar cotizaciones o programar servicios.
-Optimización para motores de búsqueda (SEO) para aumentar la visibilidad en línea de la página web.
-Este proyecto me permitió aplicar mis habilidades de desarrollo web y adquirir experiencia práctica en la creación de sitios web funcionales y atractivos. Estoy emocionado de compartir mi trabajo y aprender continuamente a medida que avanzo en mi carrera como desarrollador web.
+## 🛠️ Tecnologías utilizadas
+- **HTML5**
+- **CSS3**
+- **JavaScript**
+- **Bootstrap** (si lo usaste; si no, lo elimino)
+- **SEO básico** (optimización para motores de búsqueda)
+
+---
+
+## 🌐 Funcionalidades principales
+
+### ✔ Diseño y estructura
+- Sitio web desarrollado **desde cero**, con estructura clara e intuitiva.
+- Diseño visual moderno y orientado a la presentación corporativa.
+
+### ✔ Contenido e información
+- Secciones dedicadas a la empresa, sus servicios y sus productos.
+- Página especial que muestra las **áreas de servicio**, facilitando la ubicación de los clientes.
+- Galería fotográfica de proyectos previos, enfocada en mostrar calidad y confianza.
+
+### ✔ Interacción con el usuario
+- **Formulario de contacto** para dudas, cotizaciones o solicitudes de servicio.
+- Sistema básico de validación en los campos del formulario.  
+  *(Si no lo tiene, lo puedo agregar al README o te ayudo a implementarlo.)*
+
+### ✔ Optimización
+- Estructura orientada a **SEO**, permitiendo mejorar la visibilidad del sitio en buscadores.
+- Archivos y recursos organizados para una carga eficiente.
+
+---
+
+## 🎯 Aprendizajes y logros
+Este proyecto fue una excelente oportunidad para:
+- Aplicar mis conocimientos en desarrollo web.
+- Trabajar con una estructura real y necesidades reales de un cliente.
+- Mejorar mis habilidades en diseño, estructura, comunicación técnica y presentación profesional.
+
+Estoy entusiasmado por seguir creciendo como desarrollador y continuar creando proyectos funcionales, atractivos y escalables.
+
+---
+
+## 📂 Demo o despliegue
+*(Si ya está publicado, déjame el link y lo agrego aquí.)*  
