@@ -11,8 +11,7 @@ El objetivo principal del sitio es **promocionar los servicios y productos** de 
 - **HTML5**
 - **CSS3**
 - **JavaScript**
-- **Bootstrap** (si lo usaste; si no, lo elimino)
-- **SEO básico** (optimización para motores de búsqueda)
+
 
 ---
 
@@ -30,7 +29,7 @@ El objetivo principal del sitio es **promocionar los servicios y productos** de 
 ### ✔ Interacción con el usuario
 - **Formulario de contacto** para dudas, cotizaciones o solicitudes de servicio.
 - Sistema básico de validación en los campos del formulario.  
-  *(Si no lo tiene, lo puedo agregar al README o te ayudo a implementarlo.)*
+  
 
 ### ✔ Optimización
 - Estructura orientada a **SEO**, permitiendo mejorar la visibilidad del sitio en buscadores.
@@ -48,5 +47,3 @@ Estoy entusiasmado por seguir creciendo como desarrollador y continuar creando p
 
 ---
 
-## 📂 Demo o despliegue
-*(Si ya está publicado, déjame el link y lo agrego aquí.)*  
