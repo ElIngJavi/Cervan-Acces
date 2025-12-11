@@ -262,6 +262,51 @@ const goToIndex2Button = document.querySelector('nav a[href="index2.html"]');
 goToIndex2Button.addEventListener('click', function(e) {
   e.preventDefault();
   
+  // =======================
+// Validación del formulario de contacto
+// =======================
+const contactForm = document.querySelector("#contacto form");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", function(e) {
+    const name = document.getElementById("name").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    // Validación de nombre
+    if (name.length < 3) {
+      alert("El nombre debe tener al menos 3 caracteres.");
+      e.preventDefault();
+      return;
+    }
+
+    // Validación de teléfono (10 números)
+    const phoneRegex = /^[0-9]{10}$/;
+    if (!phoneRegex.test(phone)) {
+      alert("El teléfono debe contener 10 dígitos numéricos.");
+      e.preventDefault();
+      return;
+    }
+
+    // Validación de email
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      alert("Por favor ingresa un correo electrónico válido.");
+      e.preventDefault();
+      return;
+    }
+
+    // Validación de mensaje
+    if (message.length < 5) {
+      alert("El mensaje debe contener al menos 5 caracteres.");
+      e.preventDefault();
+      return;
+    }
+  });
+}
+
+  
   // Guarda los datos del carrito en el local storage
   const cartItems = document.getElementById("cartItems").innerHTML;
   localStorage.setItem("cartItems", cartItems);

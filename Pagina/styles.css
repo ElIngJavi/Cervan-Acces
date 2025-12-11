@@ -4,11 +4,13 @@
 header img {
   max-width: 260px; /* Ajusta el tamaño máximo del logo */
   height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
-  margin: 40px; /* Margen para separar el logo del borde de la ventana */
-  position: absolute; /* Posición absoluta para que podamos colocarlo en la esquina */
-  top: -30px; /* Distancia desde la parte superior */
-  left: 40px;  /* Distancia desde la parte izquierda */
+  margin: -25px; /* Margen para separar el logo del borde de la ventana */
+  position: fixed; /* Posición fija para mantener la imagen en su lugar mientras se desplaza */
+  top: -25px; /* Distancia desde la parte superior */
+  left: 100px;  /* Distancia desde la parte izquierda */
+  z-index: 1000; /* Asegura que la imagen esté por encima del resto del contenido */
 }
+
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
@@ -18,11 +20,17 @@ body {
 }
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color: #333333;
   color: #ffffff;
   padding: 20px;
   text-align: center;
+  z-index: 1000; /* Asegura que el encabezado esté por encima del resto del contenido */
 }
+
 
 h1 {
   font-family: 'Montserrat', sans-serif;
@@ -36,10 +44,11 @@ p {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   text-align: center;
-  margin: 10px auto 20px;
+  margin: 10px auto 40px; /* Incrementa el margen inferior para alejar el párrafo del logo */
   max-width: 800px;
   line-height: 1.5;
 }
+
 
 /* Estilos para el carrusel de imágenes */
 .slider {
@@ -89,10 +98,17 @@ p {
 
 /* Estilos para la barra de navegación */
 nav {
-  background-color: #333333;
+  position: fixed;
+  top: 130px;
+  left: 0;
+  width: 100%;
+  background-color: rgba(51, 51, 51, 0); /* Cambia el último valor (0.3) para ajustar la transparencia */
   padding: 10px;
   text-align: center;
+  z-index: 1000;
 }
+
+
 
 nav a {
   text-decoration: none;
@@ -881,3 +897,17 @@ button[type='submit'] {
   }
 }
 
+/* Marca los campos con error */
+.input-error {
+  border: 2px solid red !important;
+  background-color: #ffe6e6;
+}
+
+/* Estilo para mensajes de error */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  text-align: left;
+}

@@ -8,6 +8,9 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
   <!-- Enlazar el archivo de scripts JS -->
   <script src="script.js"></script>
+  <script src="checkout.js" defer></script>
+  <script src="script3.js"defer> </script>
+
 </head>
 
 <body>
@@ -488,27 +491,44 @@
           <li><i class="fas fa-envelope"></i> Email: </li>
         </ul>
       </div>
+	  
       <!-- Formulario de contacto -->
       <div class="contact-form">
-        <h3>Envíanos un mensaje</h3>
-        <form action="#" method="POST">
-          <div class="form-group">
-            <input type="text" id="name" name="name" placeholder="Nombre" required>
-          </div>
-          <div class="form-group">
-            <input type="text" id="phone" name="phone" placeholder="Teléfono" required>
-          </div>
-          <div class="form-group">
-            <input type="email" id="email" name="email" placeholder="Email" required>
-          </div>
-          <div class="form-group">
-            <textarea id="message" name="message" rows="4" placeholder="Mensaje" required></textarea>
-          </div>
-          <div class="button-container">
-            <button type="submit">Enviar</button>
-          </div>
-        </form>
-      </div>
+  <h3>Envíanos un mensaje</h3>
+  <form action="#" method="POST">
+    
+    <div class="form-group">
+      <input type="text" id="name" name="name" placeholder="Nombre" required>
+    </div>
+
+    <div class="form-group">
+      <input 
+		type="tel"
+		id="phone"
+		name="phone"
+		placeholder="Teléfono"
+		required
+		inputmode="numeric"
+		pattern="[0-9]*"
+	>
+
+    </div>
+
+    <div class="form-group">
+      <input type="email" id="email" name="email" placeholder="Email" required>
+    </div>
+
+    <div class="form-group">
+      <textarea id="message" name="message" rows="4" placeholder="Mensaje" required></textarea>
+    </div>
+
+    <div class="button-container">
+      <button type="submit">Enviar</button>
+    </div>
+
+  </form>
+</div>
+
     </div>
   </section>
 
